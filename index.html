@@ -89,7 +89,6 @@
     max-width: 34ch;
     margin: 0;
   }
-
   section { margin-bottom: 2.75rem; }
   h2 {
     font-family: 'Fraunces', Georgia, serif;
@@ -109,4 +108,121 @@
     font-size: 0.95rem;
   }
   .note p { margin: 0; max-width: none; }
-  .note strong { color: var(--accent); font-weight: 600
+  .note strong { color: var(--accent); font-weight: 600; }
+
+  .catalog {
+    border-top: 1px solid var(--line);
+  }
+  .book {
+    display: grid;
+    grid-template-columns: 4.5rem 1fr;
+    gap: 1rem;
+    align-items: baseline;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .book .code {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--accent);
+  }
+  .book .title {
+    font-size: 1rem;
+  }
+  .book .title a {
+    color: var(--ink);
+    text-decoration-color: var(--line);
+    text-underline-offset: 3px;
+  }
+  .book .title a:hover { text-decoration-color: var(--accent); }
+  .book .status {
+    display: block;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    margin-top: 0.15rem;
+  }
+  .catalog-note {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin-top: 1rem;
+    max-width: 55ch;
+  }
+
+  footer {
+    padding-top: 2rem;
+    border-top: 1px solid var(--line);
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 480px) {
+    .wrap { padding: 3.5rem 1.25rem 3rem; }
+    .hero svg { width: 120px; height: 120px; top: -1.8rem; right: -0.5rem; opacity: 0.4; }
+    .book { grid-template-columns: 3.5rem 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M20,140 C60,100 90,180 140,120 C170,85 150,40 110,30"></path>
+      <path d="M40,170 C80,150 100,190 150,150"></path>
+      <circle cx="140" cy="120" r="2.5" fill="var(--accent)" stroke="none"></circle>
+    </svg>
+    <h1>Jeffrey Borders</h1>
+    <p class="tagline">Science fiction. The Borders Chronicles. Wichita, Kansas.</p>
+  </div>
+
+  <section>
+    <h2>About</h2>
+    <p>Jeffrey Borders is an independent researcher, autodidact, and artist based in Wichita, Kansas, working across physics, philosophy, and fiction without institutional affiliation. His ongoing series, <em>The Borders Chronicles</em>, is a speculative science fiction saga released independently through Amazon KDP.</p>
+  </section>
+
+  <section class="note">
+    <p><strong>A note on the name —</strong> there's another published author who also writes as Jeff Borders: a Pacific Northwest–based writer of YA fantasy (<em>The Diamond War</em>) and Latter-day Saint nonfiction (<em>The Antichrist Playbook</em>). Different person, different books. If you're here for <em>The Borders Chronicles</em>, you're in the right place.</p>
+  </section>
+
+  <section>
+    <h2>The Borders Chronicles</h2>
+    <div class="catalog">
+      <div class="book">
+        <span class="code">One / Tau</span>
+        <span class="title"><a href="https://www.amazon.com/dp/B0HHFJ7XCG" target="_blank" rel="noopener">The Unilluminable Interface &amp; Traterra</a><span class="status">Doublet I — on Amazon Kindle</span></span>
+      </div>
+      <div class="book">
+        <span class="code">Pi</span>
+        <span class="title">Book Pi<span class="status">Amazon KDP</span></span>
+      </div>
+      <div class="book">
+        <span class="code">Tet</span>
+        <span class="title">The Architecture of Heal<span class="status">Amazon KDP</span></span>
+      </div>
+      <div class="book">
+        <span class="code">Quin</span>
+        <span class="title">Book Quin<span class="status">Amazon KDP</span></span>
+      </div>
+      <div class="book">
+        <span class="code">Erutan</span>
+        <span class="title">Erutan<span class="status">Amazon KDP</span></span>
+      </div>
+      <div class="book">
+        <span class="code">Zin</span>
+        <span class="title">Book Zin<span class="status">Amazon KDP</span></span>
+      </div>
+      <div class="book">
+        <span class="code">Able</span>
+        <span class="title">Book Able<span class="status">Amazon KDP</span></span>
+      </div>
+    </div>
+    <p class="catalog-note">Full titles and direct links for the remaining volumes coming soon.</p>
+  </section>
+
+  <footer>
+    Wichita, Kansas
+  </footer>
+
+</div>
+</body>
+</html>
