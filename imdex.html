@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeffrey Borders — Author of The Borders Chronicles</title>
+<meta name="description" content="Jeffrey Borders, author of The Borders Chronicles science fiction series. Wichita, Kansas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #EEF1EC;
+    --surface: #FFFFFF;
+    --ink: #1C2620;
+    --ink-soft: #52605A;
+    --accent: #2C4870;
+    --accent-soft: #DEE6EF;
+    --line: #CBD3C8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12161A;
+      --surface: #181D22;
+      --ink: #E7E9E2;
+      --ink-soft: #9CA6A0;
+      --accent: #85ABDC;
+      --accent-soft: #1E2A38;
+      --line: #2A3138;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12161A;
+    --surface: #181D22;
+    --ink: #E7E9E2;
+    --ink-soft: #9CA6A0;
+    --accent: #85ABDC;
+    --accent-soft: #1E2A38;
+    --line: #2A3138;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+  }
+
+  .hero {
+    position: relative;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero svg {
+    position: absolute;
+    top: -2.5rem;
+    right: -1rem;
+    width: 180px;
+    height: 180px;
+    opacity: 0.55;
+    pointer-events: none;
+  }
+  .hero svg path {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 1;
+  }
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(2.4rem, 7vw, 3.4rem);
+    line-height: 1.05;
+    margin: 0 0 0.9rem;
+    letter-spacing: -0.01em;
+  }
+  .tagline {
+    color: var(--ink-soft);
+    font-size: 1.05rem;
+    max-width: 34ch;
+    margin: 0;
+  }
+
+  section { margin-bottom: 2.75rem; }
+  h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.15rem;
+    color: var(--ink-soft);
+    margin: 0 0 1rem;
+  }
+  p { margin: 0 0 1rem; max-width: 62ch; }
+  p:last-child { margin-bottom: 0; }
+
+  .note {
+    background: var(--accent-soft);
+    border-radius: 3px;
+    padding: 1.25rem 1.4rem;
+    font-size: 0.95rem;
+  }
+  .note p { margin: 0; max-width: none; }
+  .note strong { color: var(--accent); font-weight: 600
